@@ -1,0 +1,37 @@
+    @font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('../fonts/IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.chrome:before {
+    font-family: 'IcoMoon-Free';
+    content:'\ead9';
+    font-size:40px;
+}
+
+
+.ff:before{
+    font-family: 'IcoMoon-Free';
+    content:'\eada';
+    font-size:40px;
+}
+
+.edge:before{
+    font-family: 'IcoMoon-Free';
+    content:'\eadc';
+    font-size:40px;
+}
+
+.meh{
+    color: red;
+}
+
+.cool{
+    color: green;
+}
+
+.wow{
+    color:blue;
+}
