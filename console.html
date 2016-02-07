@@ -4,110 +4,179 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Console</title>
     <link rel="stylesheet" href="./css/foundation.min.css">
     <link rel="stylesheet" href="./css/app.css">
 </head>
 
+<style>
+    .column.example.active {
+        position: relative;
+        transform: scale(1.15, 1.15);
+        /*background-color: #b5b5b7;*/
+        box-shadow: 1px 1px 3px 3px #0c4d78;
+        /*border:3px solid #0c4d78;*/
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        z-index: 100;
+    }
+    
+    .column.example {
+        position: relative;
+        transition: all .25s linear;
+        background-color: white;
+    }
+    
+    .blur {
+        -webkit-filter: blur(3px);
+        -moz-filter: blur(3px);
+        -o-filter: blur(3px);
+        -ms-filter: blur(3px);
+        filter: blur(3px);
+    }
+    /*    
+    body{
+        background-color: #b5b5b7;
+    }*/
+</style>
+
+
 <body>
 
     <div class="row column text-center">
-        <h2>Using your <code>console</code></h2>
+        <h2>Using your <code id="egg" style="cursor:pointer">console</code></h2>
         <hr>
     </div>
-    <div class="row small-up-2 medium-up-3 large-up-5">
-        <div class="column">
+
+
+    <div class="row small-up-2 medium-up-3 large-up-4">
+        <div class="column example blur">
             <h2><code>log();</code></h2>
-            <h4>AKA Debug</h4>
-            <span class="chrome cool"></span>
-            <span class="ff cool"></span>
-            <span class="edge meh"></span>
+            <h4>Simple Logging</h4>
+
+
+
             <a id="log" class="button large expanded hollow">Log it!</a>
         </div>
-        <div class="column">
+        <div class="column example blur">
             <h2><code>info();</code></h2>
             <h4>Informational</h4>
-            <span class="chrome"></span>
-            <span class="ff"></span>
-            <span class="edge"></span>
+
+
+
             <a id="info" class="button large expanded hollow">Info it!</a>
         </div>
-        <div class="column">
+        <div class="column example blur">
             <h2><code>warn();</code></h2>
             <h4>Warning</h4>
-            <span class="chrome"></span>
-            <span class="ff"></span>
-            <span class="edge"></span>
+
+
+
             <a id="warn" class="button large expanded hollow">Warn it!</a>
         </div>
-        <div class="column">
+        <div class="column example blur">
             <h2><code>error();</code></h2>
             <h4>Error</h4>
-            <span class="chrome"></span>
-            <span class="ff"></span>
-            <span class="edge"></span>
+
+
+
             <a id="error" class="button large expanded hollow">Error it!</a>
         </div>
-        <div class="column">
+        <div class="column example blur">
             <h2><code>assert();</code></h2>
             <h4>Assertions</h4>
-            <span class="chrome"></span>
-            <span class="ff"></span>
-            <span class="edge"></span>
+
+
+
             <a id="assert" class="button large expanded hollow">Assert it!</a>
         </div>
-        <div class="column">
+        <div class="column example blur">
             <h2><code>table();</code></h2>
-            <h4>Display as Table</h4>
-            <span class="chrome"></span>
-            <span class="ff"></span>
-            <span class="edge"></span>
+            <h4>Table View</h4>
+
+
+
             <a id="table" class="button large expanded hollow">Tablefy it!</a>
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>$();</code></h2>
+            <h4>Returns first element matching CSS selector</h4>
+
+
+
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>$$();</code></h2>
+            <h4>Returns array of elements matching CSS selector</h4>
+
+
+
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>$x();</code></h2>
+            <h4>Returns array of elements matching XPath</h4>
+
+
+
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>$0-$4</code></h2>
+            <h4>Most recently inspected items</h4>
+
+
+
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>trace();</code></h2>
+            <h4>Prints the stack</h4>
+
+
+
+            <a id="trace" class="button large expanded hollow">Trace it!</a>
         </div>
-        <div class="column">
-            <img class="thumbnail" src="http://placehold.it/300x400">
-            <h5>Nulla At Nulla Justo, Eget</h5>
-            <p>$400</p>
-            <a href="#" class="button small expanded hollow">Buy</a>
+        <div class="column example blur">
+            <h2><code>group();</code></h2>
+            <h4>Grouping messages</h4>
+
+
+
+            <a id="group" class="button large expanded hollow">Group it!</a>
+        </div>
+        <div class="column example blur">
+            <h2><code>profile();</code></h2>
+            <h4>Starts JS CPU Profile</h4>
+
+
+
+            <a id="profile" class="button large expanded hollow">Profile it!</a>
+        </div>
+        <div class="column example blur">
+            <h2><code>time();</code></h2>
+            <h4>Starts Timer</h4>
+
+
+
+            <a id="timing" class="button large expanded hollow">Time it!</a>
+        </div>
+        <div class="column example blur">
+            <h2><code>count();</code></h2>
+            <h4>Increments on a key</h4>
+
+
+
+            <a id="count" class="button large expanded hollow">Count it!</a>
         </div>
     </div>
     <hr>
     <script src="./js/vendor/jquery.min.js"></script>
-    <script src="./js/foundation.js"></script>
+    <!--<script src="./js/foundation.js"></script>-->
     <script src="./console.js"></script>
-    <script>
+    <!--<script>
         $(document).foundation();
-    </script>
+    </script>-->
 </body>
 
 </html>

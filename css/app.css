@@ -4,26 +4,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
-.chrome:before {
-    font-family: 'IcoMoon-Free';
-    content:'\ead9';
-    font-size:40px;
-}
-
-
-.ff:before{
-    font-family: 'IcoMoon-Free';
-    content:'\eada';
-    font-size:40px;
-}
-
-.edge:before{
-    font-family: 'IcoMoon-Free';
-    content:'\eadc';
-    font-size:40px;
-}
-
+//test
 .meh{
     color: red;
 }
